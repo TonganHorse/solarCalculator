@@ -36,11 +36,11 @@ function panels() {
     const dailyProduction = sunlightHours * panelRating
     console.log(dailyProduction)
 
-    let wattsPerYear = kwhPerYear * 1000
-    let wattsPerDay = wattsPerYear/365
+    let wattsPerYear = kwhPerYear * 1000;
+    let wattsPerDay = wattsPerYear/365 * 1.25;
    
     
-    let panelsNeeded = wattsPerDay / dailyProduction
+    let panelsNeeded = wattsPerDay / dailyProduction;
      return Math.ceil(panelsNeeded)
 
     
