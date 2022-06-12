@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Solar Calculator</title>
+</head>
+<body>
+    <h1 class="title">Solar Calculator</h1>
+    
+    <h2 class="subheading">Please enter kwh per month</h2>
+    
+    <form id="solarForm">
+
+        <div id="left-side">
+
+            <fieldset class="fieldset">
+                <legend class="fieldset-legend">Kwh per month</legend>
+                    <div class="input-container">
+                        <label>January:</label>
+                        <input type="number" name="kwhPerMonth">
+                            
+                    </div>
+                    <div class="input-container">
+                        <label>February:</label>
+                        <input type="number" name="kwhPerMonth">
+                            
+                    </div>
+                    <div class="input-container">
+                        <label>March:</label>
+                        <input type="number" name="kwhPerMonth">
+                            
+                    </div>
+                    <div class="input-container">
+                        <label>April:</label>
+                        <input type="number" name="kwhPerMonth">
+                            
+                    </div>
+                    <div class="input-container">
+                        <label>May:</label>
+                        <input type="number" name="kwhPerMonth">
+                            
+                    </div>
+                    <div class="input-container">
+                        <label>June:</label>
+                        <input type="number" name="kwhPerMonth">
+                            
+                    </div>
+                    <div class="input-container">
+                        <label>July:</label>
+                        <input type="number" name="kwhPerMonth">
+                            
+                    </div>
+                    <div class="input-container">
+                        <label>August:</label>
+                        <input type="number" name="kwhPerMonth">
+                            
+                    </div>
+                    <div class="input-container">
+                        <label>September:</label>
+                        <input type="number" name="kwhPerMonth">
+                            
+                    </div>
+                    <div class="input-container">
+                        <label>October:</label>
+                        <input type="number" name="kwhPerMonth">
+                        
+                    </div>
+                    <div class="input-container">
+                        <label>November:</label>
+                        <input type="number" name="kwhPerMonth">
+    
+                    </div>
+                    <div class="input-container">
+                        <label>December:</label>
+                        <input type="number" name="kwhPerMonth">
+    
+                    </div>
+    
+        </fieldset>
+        </div>
+    <div id="right-side">
+
+        <div class="photo-container">
+            <img class="img" src="./img/solar-insolation-map.avif" alt="solar-map">
+        </div>
+            <h2 class="subheading">Please select your color zone</h2>
+            <select name="zones" id="zones">
+                <option value="6">Red</option>
+                <option value="5.5">Dark Orange</option>
+                <option value="5">Light Orange</option>
+                <option value="4.5">Yellow</option>
+                <option value="4.2">Light Green</option>
+                <option value="3.5">Dark Green</option>
+            </select>
+            <h2 class="subheading">Please select which panel you prefer</h2>
+            <select name="panels" id="panels">
+                <option value="330" class="select-item">Panasonic 330W Solar Panel 96 cell SC330</option>
+                <option value="380" class="select-item">LG Solar - LG380N1C-A6 - 380W</option>
+                <option value="440" class="select-item">CANADIAN SOLAR CS3W-440MS 440W</option>
+            </select>
+    </div>
+
+
+
+        
+    </form>
+
+    <div id="display"></div>
+    
+    <button class="btn" onclick="show()">show panels needed</button>
+
+    <script src="main.js"></script>
+</body>
+</html>
